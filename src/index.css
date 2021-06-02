@@ -1,13 +1,169 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+  box-sizing: border-box;
+  background-color: white;
+  color: black;
+}
+
+.container-home {
+  background-image: url('https://www.nintenderos.com/wp-content/uploads/2020/09/pokemon-anime-e1599990591283.jpg');
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.699);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+/* ------------- LOGIN ---------------- */
+
+.container-login {
+  width: 60%;
+}
+
+.container-login img {
+  width: 100%;
+}
+
+@media (min-width: 768px) { 
+  .container-login button {
+    width: 50% !important;
+  }
+}
+
+
+/* -------------- NavBar ---------------- */
+
+.navbar img {
+  width: 7rem;
+}
+
+/* -------------- Cards ----------------- */
+
+.card-container {
+  width: 70%;
+  position: relative;
+  margin: 20px;
+  transition: all 0.3s linear;
+  background-color: #e3eaf188;
+}
+
+.card-container:hover {
+  transform: translateY(-7px);
+}
+
+@media (min-width:768px){
+  .card-container {
+    width: 40%;
+  }
+}
+
+@media (min-width:1024px){
+  .card-container {
+    width: 25%;
+  }
+}
+
+.image {
+  position: absolute;
+  top:23%;
+  left: 25%;
+  border: 5px solid white;
+  border-radius: 50%;
+  height: 150px;
+  width: 50%;
+  background-color:white;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.personal-data-container {
+  padding-top:4.5rem ;
+  text-align: center;
+}
+
+.bubbles img {
+  width: 100%;
+}
+
+.type {
+  color:var(--dark-gray);
+}
+
+.stats-container {
+  border-top: 1px solid var(--dark-gray);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px; 
+}
+
+/* ----------- Grid ----------  */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+/* ---------- Poke Info ---------- */
+
+.poke-info-container{
+  height: 30rem;
+  color: aliceblue;
+  background-color: #222;
+}
+
+.poke-info-container-image img {
+  width: 100%;
+}
+
+.container-moves  {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+
+.span-moves, .poke-info-container-info {
+  background-color: #333;
+  color:white;
+}
+
+.container-encounters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.container-location  {
+  background-color: #333;
+  
 }
