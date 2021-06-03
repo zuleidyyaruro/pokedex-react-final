@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import useAuth from '../auth/useAuth';
 import NavBar from '../components/NavBar';
 import PokeGrid from '../components/PokeGrid';
-
 import PokeItem from '../components/PokeItem';
 import SearchPoke from '../components/SearchPoke';
 import SearchType from '../components/SearchType';
