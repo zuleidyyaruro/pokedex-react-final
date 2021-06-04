@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react'
-import { useState } from 'react/cjs/react.development'
+import { useState } from 'react'
 import {getPokeUrl} from '../services/getPoke'
 import PokeItem from './PokeItem'
 

@@ -19,7 +19,7 @@ const Location = ({ locationAreaUrl }) => {
     }, [locationAreaUrl]);
 
     return (
-        <div className='d-flex justify-content-around  container-location rounded p-3 text-white'>
+        <div className='d-flex justify-content-around  bg-danger rounded p-3 text-white'>
             <div className='d-flex flex-column mx-2'>
                 <span className='text-capitalize text-center'>{locationRegion}</span>
                 <span className='fw-bold text-center'>Region</span>

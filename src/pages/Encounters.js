@@ -26,7 +26,7 @@ const Encounters = () => {
             <h1 className='mt-3 text-center'>Encounters</h1>
             {
                 dataEncounter.length === 0 ?
-                    <h2 className='text-center border'>No Encounter Found</h2>
+                    <h2 className='text-center'>No Encounter Found</h2>
                     :
                     <div className='container container-encounters mt-4  mb-5 '>
                         {arrayLocationArea}
